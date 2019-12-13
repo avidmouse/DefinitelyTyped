@@ -50,7 +50,7 @@ declare module 'react-native-background-downloader' {
     documents: string;
   };
 
-  export function checkForExistingDownloads(): DownloadTask[];
+  export function checkForExistingDownloads(): Promise<DownloadTask[]>;
 
   export function setHeaders(headers: { [key: string]: string }): void;
 }
